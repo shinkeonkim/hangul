@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.hangul-list {
+  width: 100%;
+  height: calc(100vh / 6);
+  font-size: calc(100vh / 6);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+#cursor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background-color: white;
+}
